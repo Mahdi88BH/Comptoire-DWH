@@ -1,0 +1,27 @@
+code_client,societe,contact,fonction,adresse,ville,region,code_postale,pays,telephone,fax
+ALFK2,"Alfreds Futterkiste ",M. Anders,Sales Rep,Obere Str. 57,berlin,BERLIN,12209,GERMANY,0300074321,
+ALFKI,Alfreds Futterkiste,Maria Anders,Sales Manager,Obere Str. 57,Berlin,Berlin,12209,Germany,030-0074321,NULL
+ANATR,Ana Trujillo Emparedados,Ana Trujillo,Owner,Avda. de la Constitución 2222,México D.F.,Distrito Federal,05021,Mexico,(5) 555-4729,NULL
+BOLI2,Bolido Comidas,M. Sommer,Buyer,Calle Araquil 67,madrid,MADRID,28023,Espagne,915552282,
+BOLID,Bólido Comidas preparadas,Martín Sommer,Purchasing Manager,C/ Araquil 67,Madrid,Madrid,28023,Spain,(91) 555 22 82,NULL
+CL009,Alpha Market,Youssef Amrani,Owner,Avenue Mohammed V,Rabat,Rabat-Salé,10000,Morocco,0611111111,NULL
+CL010,"alpha market ",Y. Amrani,OWNER,Av. Mohammed V,rabat,RABAT,10000,MAROC,06 11 11 11 11,
+CL011,Beta Shop,Claire Martin,Sales Manager,Rue Massena,Nice,PACA,06000,France,+33-4-00-00-00-00,NULL
+CL012,Gamma Store,NULL,NULL,Adresse inconnue,Toulouse,Occitanie,31000,France,0400000001,NULL
+CL013,Delta-Shop,Jean Dupont,Director,Centre Ville,TOULOUSE,OCCITANIE,31000,FR,04 00 00 00 02,NULL
+CL014,Epsilon,Unknown,NULL,Unknown,Unknown,Unknown,NULL,Unknown,N/A,NULL
+CL015,Zeta Commerce,Ali Hassan,Owner,Rue Hassan II,Fes,Fès-Meknès,30000,Morocco,0600000002,NULL
+CL016,Zeta-Commerce,A. Hassan,OWNER,Rue Hassan II,FÈS,FES-MEKNES,30000,Maroc,06-00-00-00-02,
+DUMMY,"   Société Test   ",NULL,NULL,Adresse inconnue,Paris,Île-de-France,75000,france,not-a-phone,NULL
+ERNS2,Ernst Handel Inc.,Roland Mendel,CEO,Kirchgasse 6,GRAZ,STYRIA,8010,Autriche,76753425,NULL
+ERNSH,Ernst Handel,Roland Mendel,Owner,Kirchgasse 6,Graz,Styria,8010,Austria,7675-3425,NULL
+FRA01,Lille Shop,Lille,Store Manager,Grand Place,Lille,Hauts-de-france,59000,France,0320000000,NULL
+FRA02,Lyon Shop,Lyon,Manager,Rue de Lyon,Lyon,NULL,69,France,0470000000,NULL
+GHOST,"  ",,NULL,,Londres,London,SW1A,UK,12345,
+LONGT,UneSociété avecunnom beaucoup trop long,Jean Bon,Director,12 rue très très longue,Lyon,Auvergne-Rhône-Alpes,69000,France,0400000000,NULL
+MARO2,Sidi Ali Store,CASABLANCA,OWNER,Centre-ville,Casablanca,Souss Massa,20 000,Maroc,06 00 00 00 00,
+MAROC,Sidi Ali Store,Casablanca,Owner,Centre Ville,Casablanca,Souss-Massa,20000,Morocco,0600000000,NULL
+NULL1,Société Inconnue,NULL,NULL,Adresse inconnue,Paris,Île-de-France,75000,France,01-02-03-04-05,NULL
+QUICK,QUICK-Stop,Horst Kloss,Manager,Taucherstraße 10,Cunewalde,Saxony,01307,Germany,0372-035188,NULL
+USA01,NYC Tech,New York,IT Manager,5th Avenue,New York,NY,10001,USA,2125550000,NULL
+USA02,LA Goods,Los Angeles,Sales,Sunset Blvd,Los Angeles,California,CA-90001,United States,3235550000,NULL

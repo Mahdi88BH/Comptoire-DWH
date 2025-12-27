@@ -1,0 +1,30 @@
+code_categorie,nom_categorie,description
+CAT_ERR,Test Error,Trash Data: Technical test record to be filtered out
+CAT_TEST,Categorie_temporaire,Catégorie de test à exclure
+CAT01,Boissons,"Sodas, cafés, thés"
+CAT02," BOISSONS",Duplicate of CAT01: Leading space and case mismatch
+CAT03,Condiments,NULL
+CAT04,Produits laitiers,"Fromages, yaourts et laitages"
+CAT05,PRODUITS LAITIERS_,Semantic Duplicate: Same name as CAT04 in uppercase
+CAT06,Grains/Céréales,"Riz, blé, pâtes..."
+CAT07,Confitures & Sirops,Special characters: Ampersand might need encoding handling
+CAT08,"  Viandes  ",Data Padding: Trailing and leading spaces in name
+CAT09,"Boisson_  ",Trailing space in name
+CAT10,boissons__,Lowercase duplicate of CAT01
+CAT11,Snacks,
+CAT12,Sn@cks,Invalid character @
+CAT13,NULL,Missing category name
+CAT14,Viandes,Same semantic as CAT08 but different naming
+CAT15,Viandes!,Punctuation noise
+CAT16,12345,Numeric category name
+CAT17,Fruits & légumes,Special character &
+CAT18,Fruits et legumes,Same as CAT17 without accents
+CAT19,Boissons_sans_sucre,Boissons light ou zero
+CAT20,Produits_bio,Produits issus de l agriculture biologique
+CAT21,Plats_prepares,Plats prêts à consommer
+CAT22,Produits_surgeles,Produits congelés
+CAT23,Epicerie_salee,"Conserves, sauces, épices"
+CAT24,Epicerie_sucree,"Biscuits, chocolat, confiseries"
+CAT25,Produits_importes,Produits venant de l etranger
+CAT26,Produits_locaux,Production locale
+CAT27,Autres_produits,NULL

@@ -1,0 +1,40 @@
+ref_produit,nom_produit,code_categorie,quantite_unite,prix_unitaire,unite_stock,unites_commandees,niveau_reapro,indisponsible
+P001,Chai,CAT01,10 boxes x 20 bags,18.0000,39,10,15,0
+P002,chai,CAT01,10 boxes x 20 bags,18.0000,39,5,15,0
+P003,Chang,CAT01,24 - 12 oz bottles,-5.0000,17,0,10,0
+P004,Aniseed Syrup,CAT03,12 - 550 ml bottles,1000000.0000,13,2,5,0
+P005,Chef Antons Gumbo,CAT01,36 boxes,21.3500,NULL,4,20,0
+P006,Mishi Kobe Niku,CAT08,18 - 500 g pkgs.,97.0000,29,1,5,0
+P007,Alice Mutton,CAT08,20 - 1 kg tins,39.0000,0,10,10,1
+P008,Produit Sans Catégorie,NULL,Unknown,15.5000,10,0,5,0
+P009,Erreur de Prix,CAT04,12 units,-10.0000,5,1,10,0
+P010,Produit Gratuit,CAT06,100 units,0.0000,100,50,20,0
+P011,Laitue,CAT04,bulk,2.5000,-50,0,30,1
+P012,Test doublon,CAT01,10 units,10.0000,10,2,5,0
+P013,Test doublon,CAT01,10 units,10.0000,10,3,5,0
+P014,Sirop d'érable,CAT07,12 bouteilles,25.0000,50,5,10,0
+P015,Maple Syrup,CAT07,12 bottles x 500ml,25.0000,45,3,10,0
+P016,Pâte de thon,CAT01,10 kg,15.5000,10,1,5,0
+P017,Thon en boîte,CAT01,10000 gr,15.5000,10,2,5,0
+P018,"Produit <script>alert(""hack"")</script>",CAT01,1 unit,1.0000,1,0,1,0
+P019,Café Noir,CAT01,Paquet de 5,20.0000,NULL,10,15,0
+P020,Eau Minérale,CAT01,6 x 1.5L,3.5000,200,20,50,0
+P021,eau minerale,CAT01,6x1500ml,3.5000,200,25,50,0
+P022,"Eau Minérale ",CAT01,1.5 L,3500.0000,200,1,50,0
+P023,Fromage,CAT04,1 kg,0.5000,1000,100,200,0
+P024,Fromage,CAT04,1000 gr,0.5000,1000,150,200,0
+P025,Test Produit,CAT_ERR,1 unit,10.0000,10,0,5,0
+P026,Produit NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+P027,<b>Lait</b>,CAT04,1L,1.2000,50,5,20,0
+P028,Pain,CAT06,1 piece,-1.0000,100,10,30,0
+P029,Pain,CAT06,1 piece,1.0000,-100,0,30,1
+P030,Jus d orange,CAT19,6 x 1L,12.0000,120,15,40,0
+P031,Jus d’orange,CAT19,6000 ml,12.0000,120,20,40,0
+P032,Pizza Surgelée,CAT22,1 piece,3.5000,500,50,100,0
+P033,Pizza surgellee,CAT22,1 unité,3.5000,480,60,100,0
+P034,Pâtes Bio,CAT20,500 g,1.2000,1000,200,300,0
+P035,Pates BIO,CAT20,0.5 kg,1.2000,950,180,300,0
+P036,Plat préparé,CAT21,1 barquette,4.0000,NULL,30,50,0
+P037,Plat prepare,CAT21,1 barq.,-4.0000,200,0,50,1
+P038,Produit Importé,CAT25,12 units,1000.0000,5,1,2,0
+P039,Produit local,CAT26,12 unités,1.0000,-20,0,10,1
