@@ -38,3 +38,66 @@ P036,Plat préparé,CAT21,1 barquette,4.0000,NULL,30,50,0
 P037,Plat prepare,CAT21,1 barq.,-4.0000,200,0,50,1
 P038,Produit Importé,CAT25,12 units,1000.0000,5,1,2,0
 P039,Produit local,CAT26,12 unités,1.0000,-20,0,10,1
+
+P040,Boisson Energy,CAT28,6 x 500 ml,8.5000,150,20,50,0
+P041,Croissant beurre,CAT29,1 piece,1.1000,800,100,200,0
+P042,Pain complet,CAT29,1 piece,1.3000,600,60,150,0
+P043,Gel douche,CAT30,250 ml,3.2000,500,50,100,0
+P044,Savon liquide,CAT30,500 ml,2.8000,400,30,100,0
+P045,Thé vert premium,CAT01,20 sachets,4.5000,300,40,80,0
+P046,Café Arabica,CAT01,250 g,6.9000,350,35,100,0
+P047,Yaourt nature,CAT04,4 x 125g,2.4000,200,25,80,0
+P048,Pâte spaghetti,CAT20,500 g,1.1000,1000,120,300,0
+P049,Pizza Margherita,CAT22,1 piece,4.2000,450,55,120,0
+
+P050,Produit_050,CAT31,50 units pack,1.50,150,5,20,0
+P051,Produit_051,CAT32,51 units pack,1.85,151,6,21,0
+P052,Produit_052,CAT33,52 units pack,2.20,152,7,22,0
+P053,Produit_053,CAT34,53 units pack,2.55,153,8,23,0
+P054,Produit_054,CAT35,54 units pack,2.90,154,9,24,0
+P055,Produit_055,CAT36,55 units pack,3.25,155,10,25,0
+P056,Produit_056,CAT37,56 units pack,3.60,156,11,26,0
+P057,Produit_057,CAT38,57 units pack,3.95,157,12,27,0
+P058,Produit_058,CAT39,58 units pack,4.30,158,13,28,0
+P059,Produit_059,CAT40,59 units pack,4.65,159,14,29,0
+P060,Produit_060,CAT41,60 units pack,5.00,160,15,10,0
+P061,Produit_061,CAT42,61 units pack,5.35,161,16,11,0
+P062,Produit_062,CAT43,62 units pack,5.70,162,17,12,0
+P063,Produit_063,CAT44,63 units pack,6.05,163,18,13,0
+P064,Produit_064,CAT45,64 units pack,6.40,164,19,14,0
+P065,Produit_065,CAT46,65 units pack,6.75,165,20,15,0
+P066,Produit_066,CAT47,66 units pack,7.10,166,21,16,0
+P067,Produit_067,CAT48,67 units pack,7.45,167,22,17,0
+P068,Produit_068,CAT49,68 units pack,7.80,168,23,18,0
+P069,Produit_069,CAT50,69 units pack,8.15,169,24,19,0
+P070,Produit_070,CAT51,70 units pack,8.50,170,25,20,0
+P071,Produit_071,CAT52,71 units pack,8.85,171,26,21,0
+P072,Produit_072,CAT53,72 units pack,9.20,172,27,22,0
+P073,Produit_073,CAT54,73 units pack,9.55,173,28,23,0
+P074,Produit_074,CAT55,74 units pack,9.90,174,29,24,0
+P075,Produit_075,CAT56,75 units pack,10.25,175,5,25,0
+P076,Produit_076,CAT57,76 units pack,10.60,176,6,26,0
+P077,Produit_077,CAT58,77 units pack,10.95,177,7,27,0
+P078,Produit_078,CAT59,78 units pack,11.30,178,8,28,0
+P079,Produit_079,CAT60,79 units pack,11.65,179,9,29,0
+P080,Produit_080,CAT31,80 units pack,12.00,180,10,10,0
+P081,Produit_081,CAT32,81 units pack,12.35,181,11,11,0
+P082,Produit_082,CAT33,82 units pack,12.70,182,12,12,0
+P083,Produit_083,CAT34,83 units pack,13.05,183,13,13,0
+P084,Produit_084,CAT35,84 units pack,13.40,184,14,14,0
+P085,Produit_085,CAT36,85 units pack,13.75,185,15,15,0
+P086,Produit_086,CAT37,86 units pack,14.10,186,16,16,0
+P087,Produit_087,CAT38,87 units pack,14.45,187,17,17,0
+P088,Produit_088,CAT39,88 units pack,14.80,188,18,18,0
+P089,Produit_089,CAT40,89 units pack,15.15,189,19,19,0
+P090,Produit_090,CAT41,90 units pack,15.50,190,20,20,0
+P091,Produit_091,CAT42,91 units pack,15.85,191,21,21,0
+P092,Produit_092,CAT43,92 units pack,16.20,192,22,22,0
+P093,Produit_093,CAT44,93 units pack,16.55,193,23,23,0
+P094,Produit_094,CAT45,94 units pack,16.90,194,24,24,0
+P095,Produit_095,CAT46,95 units pack,17.25,195,25,25,0
+P096,Produit_096,CAT47,96 units pack,17.60,196,26,26,0
+P097,Produit_097,CAT48,97 units pack,17.95,197,27,27,0
+P098,Produit_098,CAT49,98 units pack,18.30,198,28,28,0
+P099,Produit_099,CAT50,99 units pack,18.65,199,29,29,0
+P100,Produit_100,CAT51,100 units pack,19.00,200,5,10,0
