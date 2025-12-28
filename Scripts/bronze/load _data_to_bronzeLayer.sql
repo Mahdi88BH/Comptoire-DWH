@@ -1,7 +1,10 @@
+USE DataWareHouse;
+
+
 DELETE FROM bronze.categories;
 
 BULK INSERT bronze.categories
-FROM '/var/opt/mssql/categories.csv'
+FROM '/var/opt/mssql/datasets/Comptoire_Project/categories.csv'
 WITH (
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',
@@ -11,10 +14,12 @@ WITH (
 
 
 
+
+
 DELETE FROM bronze.clients;
 
 BULK INSERT bronze.clients
-FROM '/var/opt/mssql/clients.csv'
+FROM '/var/opt/mssql/datasets/Comptoire_Project/clients.csv'
 WITH (
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',
@@ -27,8 +32,9 @@ WITH (
 DELETE FROM bronze.produits;
 
 BULK INSERT bronze.produits
-FROM '/var/opt/mssql/produits.csv'
+FROM '/var/opt/mssql/datasets/Comptoire_Project/produits.csv'
 WITH (
+    FORMAT = 'CSV',
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',
     ROWTERMINATOR = '\n',
@@ -36,12 +42,16 @@ WITH (
 );
 
 
-IF OBJECT_ID('#TempCommandes') IS NOT NULL
-    DROP TABLE #TempCommandes;
 
+
+
+
+
+IF OBJECT_ID('#TempCommandes') IS NOT NULL
+    DROP TABLE dbo.#TempCommandes;
 
 -- 1. Table temporaire avec colonnes VARCHAR
-CREATE TABLE #TempCommandes (
+CREATE TABLE dbo.#TempCommandes (
     num_commande VARCHAR(50), code_client VARCHAR(50),
     date_commande VARCHAR(50), date_livraison VARCHAR(50), date_envoi VARCHAR(50),
     port VARCHAR(50), destination VARCHAR(100), adresse VARCHAR(255),
@@ -49,8 +59,8 @@ CREATE TABLE #TempCommandes (
 );
 
 -- 2. Importation brute
-BULK INSERT #TempCommandes
-FROM '/var/opt/mssql/commandes.csv'
+BULK INSERT dbo.#TempCommandes
+FROM '/var/opt/mssql/datasets/Comptoire_Project/commandes.csv'
 WITH (
     FIELDTERMINATOR = ',',
     ROWTERMINATOR = '\n',
@@ -75,7 +85,7 @@ FROM #TempCommandes;
 DELETE FROM bronze.details_commande;
 
 BULK INSERT bronze.details_commande
-FROM '/var/opt/mssql/details_commande.csv'
+FROM '/var/opt/mssql/datasets/Comptoire_Project/details_commande.csv'
 WITH (
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',
@@ -83,4 +93,4 @@ WITH (
     TABLOCK
 );
 
-
+SELECT * FROM bronze.commandes;

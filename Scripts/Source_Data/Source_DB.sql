@@ -73,6 +73,84 @@ VALUES
 -- Bulk categories to reach 100
 INSERT INTO ComptoireDB.dbo.categories (code_categorie, nom_categorie, description)
 VALUES
+('CAT31', 'Boissons00', 'Boissons non alcoolisées et alcoolisées'),
+('CAT32', 'Produits laitiers10', 'Lait, fromage, beurre et dérivés'),
+('CAT33', 'Fruits frais', 'Fruits frais de saison'),
+('CAT34', 'Légumes frais', 'Légumes frais et biologiques'),
+('CAT35', 'Viandes rouges', 'Bœuf, agneau et viande bovine'),
+('CAT36', 'Volailles', 'Poulet, dinde et autres volailles'),
+('CAT37', 'Poissons', 'Poissons frais et surgelés'),
+('CAT38', 'Fruits de mer', 'Crevettes, moules, calamars'),
+('CAT39', 'Produits surgelés', 'Aliments congelés prêts à l’emploi'),
+('CAT40', 'Épicerie sucrée', 'Sucre, chocolat, confiseries'),
+('CAT41', 'Épicerie salée', 'Pâtes, riz, conserves'),
+('CAT42', 'Céréales', 'Céréales pour petit-déjeuner'),
+('CAT43', 'Boulangerie65', 'Pain et produits de boulangerie'),
+('CAT44', 'Pâtisserie', 'Gâteaux et desserts'),
+('CAT45', 'Snacks00', 'Chips, biscuits apéritifs'),
+('CAT46', 'Sauces', 'Sauces et condiments'),
+('CAT47', 'Huiles alimentaires', 'Huiles végétales et olive'),
+('CAT48', 'Produits bio', 'Produits issus de l’agriculture biologique'),
+('CAT49', 'Produits diététiques', 'Produits faibles en sucre ou en sel'),
+('CAT50', 'Alimentation bébé', 'Produits pour nourrissons'),
+('CAT51', 'Produits ménagers', 'Produits de nettoyage'),
+('CAT52', 'Hygiène corporelle', 'Savons, shampoings, gels'),
+('CAT53', 'Cosmétiques', 'Produits de beauté'),
+('CAT54', 'Parfumerie', 'Parfums et eaux de toilette'),
+('CAT55', 'Papeterie', 'Articles de bureau'),
+('CAT56', 'Fournitures scolaires', 'Cahiers, stylos, crayons'),
+('CAT57', 'Électronique', 'Appareils électroniques'),
+('CAT58', 'Petit électroménager', 'Appareils domestiques'),
+('CAT59', 'Informatique', 'Ordinateurs et accessoires'),
+('CAT60', 'Téléphonie', 'Téléphones et accessoires'),
+('CAT61', 'Jeux vidéo', 'Consoles et jeux'),
+('CAT62', 'Jouets', 'Jouets pour enfants'),
+('CAT63', 'Articles de sport', 'Équipements sportifs'),
+('CAT64', 'Vêtements homme', 'Habillement masculin'),
+('CAT65', 'Vêtements femme', 'Habillement féminin'),
+('CAT66', 'Vêtements enfant', 'Habillement enfant'),
+('CAT67', 'Chaussures', 'Chaussures toutes catégories'),
+('CAT68', 'Accessoires mode', 'Sacs, ceintures, bijoux'),
+('CAT69', 'Montres', 'Montres et horlogerie'),
+('CAT70', 'Bijouterie', 'Bijoux précieux'),
+('CAT71', 'Meubles', 'Mobilier intérieur'),
+('CAT72', 'Décoration', 'Objets décoratifs'),
+('CAT73', 'Luminaires', 'Lampes et éclairages'),
+('CAT74', 'Jardinage', 'Articles de jardin'),
+('CAT75', 'Bricolage', 'Outils et matériel'),
+('CAT76', 'Peinture', 'Peintures et accessoires'),
+('CAT77', 'Quincaillerie', 'Visserie et fixations'),
+('CAT78', 'Automobile', 'Accessoires auto'),
+('CAT79', 'Moto', 'Équipements moto'),
+('CAT80', 'Vélos', 'Vélos et accessoires'),
+('CAT81', 'Librairie', 'Livres et manuels'),
+('CAT82', 'Papier cadeau', 'Emballages et cadeaux'),
+('CAT83', 'Musique', 'CD et instruments'),
+('CAT84', 'Films', 'DVD et Blu-ray'),
+('CAT85', 'Animaux', 'Produits pour animaux'),
+('CAT86', 'Aquariophilie', 'Produits pour poissons'),
+('CAT87', 'Oiseaux', 'Accessoires pour oiseaux'),
+('CAT88', 'Reptiles', 'Produits pour reptiles'),
+('CAT89', 'Pharmacie', 'Produits pharmaceutiques'),
+('CAT90', 'Parapharmacie', 'Produits de santé'),
+('CAT91', 'Compléments alimentaires', 'Vitamines et compléments'),
+('CAT92', 'Fitness', 'Produits de remise en forme'),
+('CAT93', 'Yoga', 'Accessoires de yoga'),
+('CAT94', 'Camping', 'Matériel de camping'),
+('CAT95', 'Randonnée', 'Équipement de randonnée'),
+('CAT96', 'Voyage', 'Accessoires de voyage'),
+('CAT97', 'Bagagerie', 'Valises et sacs'),
+('CAT98', 'Sécurité', 'Équipements de sécurité'),
+('CAT99', 'Bureau', 'Mobilier et accessoires bureau'),
+('CAT100', 'Formation', 'Supports et matériels pédagogiques');
+
+
+
+
+
+/*
+INSERT INTO ComptoireDB.dbo.categories (code_categorie, nom_categorie, description)
+VALUES
 ('CAT31', 'Categorie_31', 'Description de la categorie 31'),
 ('CAT32', 'Categorie_32', 'Description de la categorie 32'),
 ('CAT33', 'Categorie_33', 'Description de la categorie 33'),
@@ -143,7 +221,7 @@ VALUES
 ('CAT98', 'Categorie_98', 'Description de la categorie 98'),
 ('CAT99', 'Categorie_99', 'Description de la categorie 99'),
 ('CAT100', 'Categorie_100', 'Description de la categorie 100');
-
+*/
 
 
 
@@ -286,7 +364,7 @@ VALUES
 ('P002', 'chai', 'CAT01', '10 boxes x 20 bags', 18.00, 39, 5, 15, 0),
 ('P003', 'Chang', 'CAT01', '24 - 12 oz bottles', -5.00, 17, 0, 10, 0),
 ('P004', 'Aniseed Syrup', 'CAT03', '12 - 550 ml bottles', 1000000.00, 13, 2, 5, 0),
-('P005', 'Chef Antons Gumbo', 'CAT01', '36 boxes', 21.35, NULL, 4, 20, 0),
+('P005', 'Chef Antons Gumbo', 'CAT01', '36 boxes', 21.35, 0, 4, 20, 0),
 ('P006', 'Mishi Kobe Niku', 'CAT08', '18 - 500 g pkgs.', 97.00, 29, 1, 5, 0),
 ('P007', 'Alice Mutton', 'CAT08', '20 - 1 kg tins', 39.00, 0, 10, 10, 1),
 ('P008', 'Produit Sans Catégorie', NULL, 'Unknown', 15.50, 10, 0, 5, 0),
@@ -300,14 +378,14 @@ VALUES
 ('P016', 'Pâte de thon', 'CAT01', '10 kg', 15.50, 10, 1, 5, 0),
 ('P017', 'Thon en boîte', 'CAT01', '10000 gr', 15.50, 10, 2, 5, 0),
 ('P018', 'Produit <script>alert("hack")</script>', 'CAT01', '1 unit', 1.00, 1, 0, 1, 0),
-('P019', 'Café Noir', 'CAT01', 'Paquet de 5', 20.00, NULL, 10, 15, 0),
+('P019', 'Café Noir', 'CAT01', 'Paquet de 5', 20.00, 0, 10, 15, 0),
 ('P020', 'Eau Minérale', 'CAT01', '6 x 1.5L', 3.50, 200, 20, 50, 0),
 ('P021', 'eau minerale', 'CAT01', '6x1500ml', 3.50, 200, 25, 50, 0),
 ('P022', 'Eau Minérale ', 'CAT01', '1.5 L', 3500, 200, 1, 50, 0),
 ('P023', 'Fromage', 'CAT04', '1 kg', 0.50, 1000, 100, 200, 0),
 ('P024', 'Fromage', 'CAT04', '1000 gr', 0.50, 1000, 150, 200, 0),
 ('P025', 'Test Produit', 'CAT_ERR', '1 unit', 10.00, 10, 0, 5, 0),
-('P026', 'Produit NULL', NULL, NULL, NULL, NULL, NULL, NULL, 1),
+('P026', 'Produit NULL', NULL, NULL, 0, 0, 0, 0, 1),
 ('P027', '<b>Lait</b>', 'CAT04', '1L', 1.20, 50, 5, 20, 0),
 ('P028', 'Pain', 'CAT06', '1 piece', -1.00, 100, 10, 30, 0),
 ('P029', 'Pain', 'CAT06', '1 piece', 1.00, -100, 0, 30, 1),
@@ -317,7 +395,7 @@ VALUES
 ('P033', 'Pizza surgellee', 'CAT22', '1 unité', 3.50, 480, 60, 100, 0),
 ('P034', 'Pâtes Bio', 'CAT20', '500 g', 1.20, 1000, 200, 300, 0),
 ('P035', 'Pates BIO', 'CAT20', '0.5 kg', 1.20, 950, 180, 300, 0),
-('P036', 'Plat préparé', 'CAT21', '1 barquette', 4.00, NULL, 30, 50, 0),
+('P036', 'Plat préparé', 'CAT21', '1 barquette', 4.00, 0, 30, 50, 0),
 ('P037', 'Plat prepare', 'CAT21', '1 barq.', -4.00, 200, 0, 50, 1),
 ('P038', 'Produit Importé', 'CAT25', '12 units', 1000.00, 5, 1, 2, 0),
 ('P039', 'Produit local', 'CAT26', '12 unités', 1.00, -20, 0, 10, 1);
@@ -336,6 +414,64 @@ VALUES
 ('P048', 'Pâte spaghetti', 'CAT20', '500 g', 1.10, 1000, 120, 300, 0),
 ('P049', 'Pizza Margherita', 'CAT22', '1 piece', 4.20, 450, 55, 120, 0);
 
+
+INSERT INTO ComptoireDB.dbo.produits
+(ref_produit, nom_produit, code_categorie, quantite_unite, prix_unitaire, unite_stock, unites_commandees, niveau_reapro, indisponsible)
+VALUES
+('P050', 'Eau minérale naturelle 1.5L', 'CAT31', '6 bouteilles de 1.5L', 1.50, 150, 5, 20, 0),
+('P051', 'Lait demi-écrémé 1L', 'CAT32', '12 briques de 1L', 1.85, 151, 6, 21, 0),
+('P052', 'Pommes Golden', 'CAT33', 'Caisse de 10 kg', 2.20, 152, 7, 22, 0),
+('P053', 'Tomates fraîches', 'CAT34', 'Caisse de 8 kg', 2.55, 153, 8, 23, 0),
+('P054', 'Bœuf haché frais', 'CAT35', 'Barquette de 1 kg', 2.90, 154, 9, 24, 0),
+('P055', 'Filet de poulet', 'CAT36', 'Barquette de 1 kg', 3.25, 155, 10, 25, 0),
+('P056', 'Saumon frais', 'CAT37', 'Filet de 500 g', 3.60, 156, 11, 26, 0),
+('P057', 'Crevettes décortiquées', 'CAT38', 'Sachet de 1 kg', 3.95, 157, 12, 27, 0),
+('P058', 'Pizza surgelée fromage', 'CAT39', 'Boîte de 400 g', 4.30, 158, 13, 28, 0),
+('P059', 'Tablette de chocolat noir', 'CAT40', 'Lot de 10 x 100 g', 4.65, 159, 14, 29, 0),
+('P060', 'Pâtes spaghetti', 'CAT41', 'Carton de 20 paquets', 5.00, 160, 15, 10, 0),
+('P061', 'Céréales petit-déjeuner', 'CAT42', 'Carton de 12 boîtes', 5.35, 161, 16, 11, 0),
+('P062', 'Pain de campagne', 'CAT43', 'Pain de 500 g', 5.70, 162, 17, 12, 0),
+('P063', 'Gâteau au chocolat', 'CAT44', 'Boîte de 6 parts', 6.05, 163, 18, 13, 0),
+('P064', 'Chips salées', 'CAT45', 'Lot de 12 sachets', 6.40, 164, 19, 14, 0),
+('P065', 'Sauce tomate cuisinée', 'CAT46', 'Carton de 12 bocaux', 6.75, 165, 20, 15, 0),
+('P066', 'Huile d’olive vierge', 'CAT47', 'Bidon de 5 L', 7.10, 166, 21, 16, 0),
+('P067', 'Farine bio', 'CAT48', 'Sac de 5 kg', 7.45, 167, 22, 17, 0),
+('P068', 'Biscuits sans sucre', 'CAT49', 'Boîte de 24 paquets', 7.80, 168, 23, 18, 0),
+('P069', 'Petits pots bébé', 'CAT50', 'Carton de 24 pots', 8.15, 169, 24, 19, 0),
+('P070', 'Détergent multi-usage', 'CAT51', 'Bidon de 5 L', 8.50, 170, 25, 20, 0),
+('P071', 'Gel douche', 'CAT52', 'Carton de 24 flacons', 8.85, 171, 26, 21, 0),
+('P072', 'Crème hydratante', 'CAT53', 'Lot de 12 tubes', 9.20, 172, 27, 22, 0),
+('P073', 'Eau de toilette', 'CAT54', 'Flacon de 100 ml', 9.55, 173, 28, 23, 0),
+('P074', 'Ramettes papier A4', 'CAT55', 'Carton de 5 ramettes', 9.90, 174, 29, 24, 0),
+('P075', 'Cahiers scolaires', 'CAT56', 'Lot de 20 cahiers', 10.25, 175, 5, 25, 0),
+('P076', 'Casque audio', 'CAT57', 'Boîte individuelle', 10.60, 176, 6, 26, 0),
+('P077', 'Bouilloire électrique', 'CAT58', 'Unité', 10.95, 177, 7, 27, 0),
+('P078', 'Clavier informatique', 'CAT59', 'Boîte individuelle', 11.30, 178, 8, 28, 0),
+('P079', 'Chargeur smartphone', 'CAT60', 'Boîte individuelle', 11.65, 179, 9, 29, 0),
+('P080', 'Jus d’orange 1L', 'CAT31', 'Pack de 12 bouteilles', 12.00, 180, 10, 10, 0),
+('P081', 'Fromage emmental', 'CAT32', 'Bloc de 1 kg', 12.35, 181, 11, 11, 0),
+('P082', 'Bananes', 'CAT33', 'Caisse de 15 kg', 12.70, 182, 12, 12, 0),
+('P083', 'Courgettes', 'CAT34', 'Caisse de 10 kg', 13.05, 183, 13, 13, 0),
+('P084', 'Côtelettes d’agneau', 'CAT35', 'Barquette de 1 kg', 13.40, 184, 14, 14, 0),
+('P085', 'Escalopes de dinde', 'CAT36', 'Barquette de 1 kg', 13.75, 185, 15, 15, 0),
+('P086', 'Cabillaud frais', 'CAT37', 'Filet de 1 kg', 14.10, 186, 16, 16, 0),
+('P087', 'Moules fraîches', 'CAT38', 'Sac de 5 kg', 14.45, 187, 17, 17, 0),
+('P088', 'Frites surgelées', 'CAT39', 'Sac de 2.5 kg', 14.80, 188, 18, 18, 0),
+('P089', 'Bonbons assortis', 'CAT40', 'Sachet de 2 kg', 15.15, 189, 19, 19, 0),
+('P090', 'Riz long grain', 'CAT41', 'Sac de 10 kg', 15.50, 190, 20, 20, 0),
+('P091', 'Flocons d’avoine', 'CAT42', 'Sac de 5 kg', 15.85, 191, 21, 21, 0),
+('P092', 'Baguettes précuites', 'CAT43', 'Lot de 20 unités', 16.20, 192, 22, 22, 0),
+('P093', 'Tarte aux pommes', 'CAT44', 'Boîte de 6 parts', 16.55, 193, 23, 23, 0),
+('P094', 'Biscuits apéritifs', 'CAT45', 'Lot de 24 sachets', 16.90, 194, 24, 24, 0),
+('P095', 'Ketchup', 'CAT46', 'Carton de 12 bouteilles', 17.25, 195, 25, 25, 0),
+('P096', 'Huile de tournesol', 'CAT47', 'Bidon de 5 L', 17.60, 196, 26, 26, 0),
+('P097', 'Pâtes complètes bio', 'CAT48', 'Carton de 20 paquets', 17.95, 197, 27, 27, 0),
+('P098', 'Barres céréalières', 'CAT49', 'Boîte de 48 barres', 18.30, 198, 28, 28, 0),
+('P099', 'Lait infantile', 'CAT50', 'Carton de 6 boîtes', 18.65, 199, 29, 29, 0),
+('P100', 'Nettoyant sol', 'CAT51', 'Bidon de 5 L', 19.00, 200, 5, 10, 0);
+
+
+/*
 -- Bulk products to reach 100
 INSERT INTO ComptoireDB.dbo.produits (ref_produit, nom_produit, code_categorie, quantite_unite, prix_unitaire, unite_stock, unites_commandees, niveau_reapro, indisponsible)
 VALUES
@@ -390,7 +526,7 @@ VALUES
 ('P098', 'Produit_098', 'CAT49', '98 units pack', 18.30, 198, 28, 28, 0),
 ('P099', 'Produit_099', 'CAT50', '99 units pack', 18.65, 199, 29, 29, 0),
 ('P100', 'Produit_100', 'CAT51', '100 units pack', 19.00, 200, 5, 10, 0);
-
+*/
 
 
 
@@ -435,7 +571,7 @@ INSERT INTO ComptoireDB.dbo.commandes
 (num_commande, code_client, date_commande, date_livraison, date_envoi, port, destination, adresse_livraison, ville_livraison, region_livraison, code_postale_livraison, pays_livraison) 
 VALUES
 ('C4001', 'ALFKI', '2024-01-05', NULL, NULL, 5.0, 'Europe', 'Address for ALFKI', 'Berlin', 'Berlin', '12209', 'Germany'),
-('C4002', 'ANATR', '2024-01-06', '2024-01-09', '2024-01-07', 6.5, 'North America', 'Address for ANATR', 'Mexico City', 'Distrito Federal', '03940', 'Mexico'),
+('C4002', 'ANATR', '2024-01-06', '2024-01-09', '2024-01-07', 6.5, 'North America', 'Address for ANATR', 'Mexico City', 'Distrito Fed', '03940', 'Mexico'),
 ('C4003', 'BOLID', '2024-01-07', '2024-01-10', '2024-01-08', 8.0, 'Africa', 'Address for BOLID', 'Madrid', 'Madrid', '28023', 'Spain'),
 ('C4004', 'ERNSH', '2024-01-08', NULL, '2024-01-09', 9.5, 'Asia', 'Address for ERNSH', 'Graz', 'Styria', '8010', 'Austria'),
 ('C4005', 'QUICK', '2024-01-09', '2024-01-12', NULL, 11.0, 'Europe', 'Address for QUICK', 'Cunewalde', NULL, '02733', 'Germany'),
@@ -455,7 +591,7 @@ VALUES
 ('C4019', 'CL019', '2024-01-23', NULL, '2024-01-24', 32.0, 'Africa', 'Address for CL019', 'Berlin', 'Berlin', '10117', 'Germany'),
 ('C4020', 'CL020', '2024-01-24', '2024-01-27', '2024-01-25', 33.5, 'Asia', 'Address for CL020', 'Nice', 'PACA', '06000', 'France'),
 ('C4021', 'ALFKI', '2024-01-25', '2024-01-28', NULL, 5.0, 'Europe', 'Address for ALFKI', 'Berlin', 'Berlin', '12209', 'Germany'),
-('C4022', 'ANATR', '2024-01-26', NULL, '2024-01-27', 6.5, 'North America', 'Address for ANATR', 'Mexico City', 'Distrito Federal', '03940', 'Mexico'),
+('C4022', 'ANATR', '2024-01-26', NULL, '2024-01-27', 6.5, 'North America', 'Address for ANATR', 'Mexico City', 'Distrito Fed', '03940', 'Mexico'),
 ('C4023', 'BOLID', '2024-01-27', '2024-01-30', '2024-01-28', 8.0, 'Africa', 'Address for BOLID', 'Madrid', 'Madrid', '28023', 'Spain'),
 ('C4024', 'ERNSH', '2024-01-28', '2024-01-31', '2024-01-29', 9.5, 'Asia', 'Address for ERNSH', 'Graz', 'Styria', '8010', 'Austria'),
 ('C4025', 'QUICK', '2024-01-29', NULL, NULL, 11.0, 'Europe', 'Address for QUICK', 'Cunewalde', NULL, '02733', 'Germany'),
@@ -475,7 +611,7 @@ VALUES
 ('C4039', 'CL019', '2024-02-12', '2024-02-15', '2024-02-13', 32.0, 'Africa', 'Address for CL019', 'Berlin', 'Berlin', '10117', 'Germany'),
 ('C4040', 'CL020', '2024-02-13', NULL, '2024-02-14', 33.5, 'Asia', 'Address for CL020', 'Nice', 'PACA', '06000', 'France'),
 ('C4041', 'ALFKI', '2024-02-14', '2024-02-17', NULL, 5.0, 'Europe', 'Address for ALFKI', 'Berlin', 'Berlin', '12209', 'Germany'),
-('C4042', 'ANATR', '2024-02-15', '2024-02-18', '2024-02-16', 6.5, 'North America', 'Address for ANATR', 'Mexico City', 'Distrito Federal', '03940', 'Mexico'),
+('C4042', 'ANATR', '2024-02-15', '2024-02-18', '2024-02-16', 6.5, 'North America', 'Address for ANATR', 'Mexico City', 'Distrito Fed', '03940', 'Mexico'),
 ('C4043', 'BOLID', '2024-02-16', NULL, '2024-02-17', 8.0, 'Africa', 'Address for BOLID', 'Madrid', 'Madrid', '28023', 'Spain'),
 ('C4044', 'ERNSH', '2024-02-17', '2024-02-20', '2024-02-18', 9.5, 'Asia', 'Address for ERNSH', 'Graz', 'Styria', '8010', 'Austria'),
 ('C4045', 'QUICK', '2024-02-18', '2024-02-21', NULL, 11.0, 'Europe', 'Address for QUICK', 'Cunewalde', NULL, '02733', 'Germany'),
@@ -495,7 +631,7 @@ VALUES
 ('C4059', 'CL019', '2024-03-03', '2024-03-06', '2024-03-04', 32.0, 'Africa', 'Address for CL019', 'Berlin', 'Berlin', '10117', 'Germany'),
 ('C4060', 'CL020', '2024-03-04', '2024-03-07', '2024-03-05', 33.5, 'Asia', 'Address for CL020', 'Nice', 'PACA', '06000', 'France'),
 ('C4061', 'ALFKI', '2024-03-05', NULL, NULL, 5.0, 'Europe', 'Address for ALFKI', 'Berlin', 'Berlin', '12209', 'Germany'),
-('C4062', 'ANATR', '2024-03-06', '2024-03-09', '2024-03-07', 6.5, 'North America', 'Address for ANATR', 'Mexico City', 'Distrito Federal', '03940', 'Mexico'),
+('C4062', 'ANATR', '2024-03-06', '2024-03-09', '2024-03-07', 6.5, 'North America', 'Address for ANATR', 'Mexico City', 'Distrito Fed', '03940', 'Mexico'),
 ('C4063', 'BOLID', '2024-03-07', '2024-03-10', '2024-03-08', 8.0, 'Africa', 'Address for BOLID', 'Madrid', 'Madrid', '28023', 'Spain'),
 ('C4064', 'ERNSH', '2024-03-08', NULL, '2024-03-09', 9.5, 'Asia', 'Address for ERNSH', 'Graz', 'Styria', '8010', 'Austria'),
 ('C4065', 'QUICK', '2024-03-09', '2024-03-12', NULL, 11.0, 'Europe', 'Address for QUICK', 'Cunewalde', NULL, '02733', 'Germany'),

@@ -3,7 +3,7 @@ P001,Chai,CAT01,10 boxes x 20 bags,18.0000,39,10,15,0
 P002,chai,CAT01,10 boxes x 20 bags,18.0000,39,5,15,0
 P003,Chang,CAT01,24 - 12 oz bottles,-5.0000,17,0,10,0
 P004,Aniseed Syrup,CAT03,12 - 550 ml bottles,1000000.0000,13,2,5,0
-P005,Chef Antons Gumbo,CAT01,36 boxes,21.3500,NULL,4,20,0
+P005,Chef Antons Gumbo,CAT01,36 boxes,21.3500,0,4,20,0
 P006,Mishi Kobe Niku,CAT08,18 - 500 g pkgs.,97.0000,29,1,5,0
 P007,Alice Mutton,CAT08,20 - 1 kg tins,39.0000,0,10,10,1
 P008,Produit Sans Catégorie,NULL,Unknown,15.5000,10,0,5,0
@@ -17,14 +17,14 @@ P015,Maple Syrup,CAT07,12 bottles x 500ml,25.0000,45,3,10,0
 P016,Pâte de thon,CAT01,10 kg,15.5000,10,1,5,0
 P017,Thon en boîte,CAT01,10000 gr,15.5000,10,2,5,0
 P018,"Produit <script>alert(""hack"")</script>",CAT01,1 unit,1.0000,1,0,1,0
-P019,Café Noir,CAT01,Paquet de 5,20.0000,NULL,10,15,0
+P019,Café Noir,CAT01,Paquet de 5,20.0000,0,10,15,0
 P020,Eau Minérale,CAT01,6 x 1.5L,3.5000,200,20,50,0
 P021,eau minerale,CAT01,6x1500ml,3.5000,200,25,50,0
 P022,"Eau Minérale ",CAT01,1.5 L,3500.0000,200,1,50,0
 P023,Fromage,CAT04,1 kg,0.5000,1000,100,200,0
 P024,Fromage,CAT04,1000 gr,0.5000,1000,150,200,0
 P025,Test Produit,CAT_ERR,1 unit,10.0000,10,0,5,0
-P026,Produit NULL,NULL,NULL,NULL,NULL,NULL,NULL,1
+P026,Produit NULL,NULL,NULL,0.0000,0,0,0,1
 P027,<b>Lait</b>,CAT04,1L,1.2000,50,5,20,0
 P028,Pain,CAT06,1 piece,-1.0000,100,10,30,0
 P029,Pain,CAT06,1 piece,1.0000,-100,0,30,1
@@ -34,11 +34,10 @@ P032,Pizza Surgelée,CAT22,1 piece,3.5000,500,50,100,0
 P033,Pizza surgellee,CAT22,1 unité,3.5000,480,60,100,0
 P034,Pâtes Bio,CAT20,500 g,1.2000,1000,200,300,0
 P035,Pates BIO,CAT20,0.5 kg,1.2000,950,180,300,0
-P036,Plat préparé,CAT21,1 barquette,4.0000,NULL,30,50,0
+P036,Plat préparé,CAT21,1 barquette,4.0000,0,30,50,0
 P037,Plat prepare,CAT21,1 barq.,-4.0000,200,0,50,1
 P038,Produit Importé,CAT25,12 units,1000.0000,5,1,2,0
 P039,Produit local,CAT26,12 unités,1.0000,-20,0,10,1
-
 P040,Boisson Energy,CAT28,6 x 500 ml,8.5000,150,20,50,0
 P041,Croissant beurre,CAT29,1 piece,1.1000,800,100,200,0
 P042,Pain complet,CAT29,1 piece,1.3000,600,60,150,0
@@ -49,55 +48,54 @@ P046,Café Arabica,CAT01,250 g,6.9000,350,35,100,0
 P047,Yaourt nature,CAT04,4 x 125g,2.4000,200,25,80,0
 P048,Pâte spaghetti,CAT20,500 g,1.1000,1000,120,300,0
 P049,Pizza Margherita,CAT22,1 piece,4.2000,450,55,120,0
-
-P050,Produit_050,CAT31,50 units pack,1.50,150,5,20,0
-P051,Produit_051,CAT32,51 units pack,1.85,151,6,21,0
-P052,Produit_052,CAT33,52 units pack,2.20,152,7,22,0
-P053,Produit_053,CAT34,53 units pack,2.55,153,8,23,0
-P054,Produit_054,CAT35,54 units pack,2.90,154,9,24,0
-P055,Produit_055,CAT36,55 units pack,3.25,155,10,25,0
-P056,Produit_056,CAT37,56 units pack,3.60,156,11,26,0
-P057,Produit_057,CAT38,57 units pack,3.95,157,12,27,0
-P058,Produit_058,CAT39,58 units pack,4.30,158,13,28,0
-P059,Produit_059,CAT40,59 units pack,4.65,159,14,29,0
-P060,Produit_060,CAT41,60 units pack,5.00,160,15,10,0
-P061,Produit_061,CAT42,61 units pack,5.35,161,16,11,0
-P062,Produit_062,CAT43,62 units pack,5.70,162,17,12,0
-P063,Produit_063,CAT44,63 units pack,6.05,163,18,13,0
-P064,Produit_064,CAT45,64 units pack,6.40,164,19,14,0
-P065,Produit_065,CAT46,65 units pack,6.75,165,20,15,0
-P066,Produit_066,CAT47,66 units pack,7.10,166,21,16,0
-P067,Produit_067,CAT48,67 units pack,7.45,167,22,17,0
-P068,Produit_068,CAT49,68 units pack,7.80,168,23,18,0
-P069,Produit_069,CAT50,69 units pack,8.15,169,24,19,0
-P070,Produit_070,CAT51,70 units pack,8.50,170,25,20,0
-P071,Produit_071,CAT52,71 units pack,8.85,171,26,21,0
-P072,Produit_072,CAT53,72 units pack,9.20,172,27,22,0
-P073,Produit_073,CAT54,73 units pack,9.55,173,28,23,0
-P074,Produit_074,CAT55,74 units pack,9.90,174,29,24,0
-P075,Produit_075,CAT56,75 units pack,10.25,175,5,25,0
-P076,Produit_076,CAT57,76 units pack,10.60,176,6,26,0
-P077,Produit_077,CAT58,77 units pack,10.95,177,7,27,0
-P078,Produit_078,CAT59,78 units pack,11.30,178,8,28,0
-P079,Produit_079,CAT60,79 units pack,11.65,179,9,29,0
-P080,Produit_080,CAT31,80 units pack,12.00,180,10,10,0
-P081,Produit_081,CAT32,81 units pack,12.35,181,11,11,0
-P082,Produit_082,CAT33,82 units pack,12.70,182,12,12,0
-P083,Produit_083,CAT34,83 units pack,13.05,183,13,13,0
-P084,Produit_084,CAT35,84 units pack,13.40,184,14,14,0
-P085,Produit_085,CAT36,85 units pack,13.75,185,15,15,0
-P086,Produit_086,CAT37,86 units pack,14.10,186,16,16,0
-P087,Produit_087,CAT38,87 units pack,14.45,187,17,17,0
-P088,Produit_088,CAT39,88 units pack,14.80,188,18,18,0
-P089,Produit_089,CAT40,89 units pack,15.15,189,19,19,0
-P090,Produit_090,CAT41,90 units pack,15.50,190,20,20,0
-P091,Produit_091,CAT42,91 units pack,15.85,191,21,21,0
-P092,Produit_092,CAT43,92 units pack,16.20,192,22,22,0
-P093,Produit_093,CAT44,93 units pack,16.55,193,23,23,0
-P094,Produit_094,CAT45,94 units pack,16.90,194,24,24,0
-P095,Produit_095,CAT46,95 units pack,17.25,195,25,25,0
-P096,Produit_096,CAT47,96 units pack,17.60,196,26,26,0
-P097,Produit_097,CAT48,97 units pack,17.95,197,27,27,0
-P098,Produit_098,CAT49,98 units pack,18.30,198,28,28,0
-P099,Produit_099,CAT50,99 units pack,18.65,199,29,29,0
-P100,Produit_100,CAT51,100 units pack,19.00,200,5,10,0
+P050,Eau minérale naturelle 1.5L,CAT31,6 bouteilles de 1.5L,1.5000,150,5,20,0
+P051,Lait demi-écrémé 1L,CAT32,12 briques de 1L,1.8500,151,6,21,0
+P052,Pommes Golden,CAT33,Caisse de 10 kg,2.2000,152,7,22,0
+P053,Tomates fraîches,CAT34,Caisse de 8 kg,2.5500,153,8,23,0
+P054,Bœuf haché frais,CAT35,Barquette de 1 kg,2.9000,154,9,24,0
+P055,Filet de poulet,CAT36,Barquette de 1 kg,3.2500,155,10,25,0
+P056,Saumon frais,CAT37,Filet de 500 g,3.6000,156,11,26,0
+P057,Crevettes décortiquées,CAT38,Sachet de 1 kg,3.9500,157,12,27,0
+P058,Pizza surgelée fromage,CAT39,Boîte de 400 g,4.3000,158,13,28,0
+P059,Tablette de chocolat noir,CAT40,Lot de 10 x 100 g,4.6500,159,14,29,0
+P060,Pâtes spaghetti,CAT41,Carton de 20 paquets,5.0000,160,15,10,0
+P061,Céréales petit-déjeuner,CAT42,Carton de 12 boîtes,5.3500,161,16,11,0
+P062,Pain de campagne,CAT43,Pain de 500 g,5.7000,162,17,12,0
+P063,Gâteau au chocolat,CAT44,Boîte de 6 parts,6.0500,163,18,13,0
+P064,Chips salées,CAT45,Lot de 12 sachets,6.4000,164,19,14,0
+P065,Sauce tomate cuisinée,CAT46,Carton de 12 bocaux,6.7500,165,20,15,0
+P066,Huile d’olive vierge,CAT47,Bidon de 5 L,7.1000,166,21,16,0
+P067,Farine bio,CAT48,Sac de 5 kg,7.4500,167,22,17,0
+P068,Biscuits sans sucre,CAT49,Boîte de 24 paquets,7.8000,168,23,18,0
+P069,Petits pots bébé,CAT50,Carton de 24 pots,8.1500,169,24,19,0
+P070,Détergent multi-usage,CAT51,Bidon de 5 L,8.5000,170,25,20,0
+P071,Gel douche,CAT52,Carton de 24 flacons,8.8500,171,26,21,0
+P072,Crème hydratante,CAT53,Lot de 12 tubes,9.2000,172,27,22,0
+P073,Eau de toilette,CAT54,Flacon de 100 ml,9.5500,173,28,23,0
+P074,Ramettes papier A4,CAT55,Carton de 5 ramettes,9.9000,174,29,24,0
+P075,Cahiers scolaires,CAT56,Lot de 20 cahiers,10.2500,175,5,25,0
+P076,Casque audio,CAT57,Boîte individuelle,10.6000,176,6,26,0
+P077,Bouilloire électrique,CAT58,Unité,10.9500,177,7,27,0
+P078,Clavier informatique,CAT59,Boîte individuelle,11.3000,178,8,28,0
+P079,Chargeur smartphone,CAT60,Boîte individuelle,11.6500,179,9,29,0
+P080,Jus d’orange 1L,CAT31,Pack de 12 bouteilles,12.0000,180,10,10,0
+P081,Fromage emmental,CAT32,Bloc de 1 kg,12.3500,181,11,11,0
+P082,Bananes,CAT33,Caisse de 15 kg,12.7000,182,12,12,0
+P083,Courgettes,CAT34,Caisse de 10 kg,13.0500,183,13,13,0
+P084,Côtelettes d’agneau,CAT35,Barquette de 1 kg,13.4000,184,14,14,0
+P085,Escalopes de dinde,CAT36,Barquette de 1 kg,13.7500,185,15,15,0
+P086,Cabillaud frais,CAT37,Filet de 1 kg,14.1000,186,16,16,0
+P087,Moules fraîches,CAT38,Sac de 5 kg,14.4500,187,17,17,0
+P088,Frites surgelées,CAT39,Sac de 2.5 kg,14.8000,188,18,18,0
+P089,Bonbons assortis,CAT40,Sachet de 2 kg,15.1500,189,19,19,0
+P090,Riz long grain,CAT41,Sac de 10 kg,15.5000,190,20,20,0
+P091,Flocons d’avoine,CAT42,Sac de 5 kg,15.8500,191,21,21,0
+P092,Baguettes précuites,CAT43,Lot de 20 unités,16.2000,192,22,22,0
+P093,Tarte aux pommes,CAT44,Boîte de 6 parts,16.5500,193,23,23,0
+P094,Biscuits apéritifs,CAT45,Lot de 24 sachets,16.9000,194,24,24,0
+P095,Ketchup,CAT46,Carton de 12 bouteilles,17.2500,195,25,25,0
+P096,Huile de tournesol,CAT47,Bidon de 5 L,17.6000,196,26,26,0
+P097,Pâtes complètes bio,CAT48,Carton de 20 paquets,17.9500,197,27,27,0
+P098,Barres céréalières,CAT49,Boîte de 48 barres,18.3000,198,28,28,0
+P099,Lait infantile,CAT50,Carton de 6 boîtes,18.6500,199,29,29,0
+P100,Nettoyant sol,CAT51,Bidon de 5 L,19.0000,200,5,10,0

@@ -11,6 +11,7 @@ CAT07,Confitures & Sirops,Special characters: Ampersand might need encoding hand
 CAT08,"  Viandes  ",Data Padding: Trailing and leading spaces in name
 CAT09,"Boisson_  ",Trailing space in name
 CAT10,boissons__,Lowercase duplicate of CAT01
+CAT100,Formation,Supports et matériels pédagogiques
 CAT11,Snacks,
 CAT12,Sn@cks,Invalid character @
 CAT13,NULL,Missing category name
@@ -28,78 +29,75 @@ CAT24,Epicerie_sucree,"Biscuits, chocolat, confiseries"
 CAT25,Produits_importes,Produits venant de l etranger
 CAT26,Produits_locaux,Production locale
 CAT27,Autres_produits,NULL
-
-CAT28,Boissons_energetiques,"Boissons énergétiques"
+CAT28,Boissons_energetiques,Boissons énergétiques
 CAT29,Boulangerie,"Pains, viennoiseries"
-CAT30,Hygiene,"Soins et hygiène"
-
-CAT31,Categorie_31,Description de la categorie 31
-CAT32,Categorie_32,Description de la categorie 32
-CAT33,Categorie_33,Description de la categorie 33
-CAT34,Categorie_34,Description de la categorie 34
-CAT35,Categorie_35,Description de la categorie 35
-CAT36,Categorie_36,Description de la categorie 36
-CAT37,Categorie_37,Description de la categorie 37
-CAT38,Categorie_38,Description de la categorie 38
-CAT39,Categorie_39,Description de la categorie 39
-CAT40,Categorie_40,Description de la categorie 40
-CAT41,Categorie_41,Description de la categorie 41
-CAT42,Categorie_42,Description de la categorie 42
-CAT43,Categorie_43,Description de la categorie 43
-CAT44,Categorie_44,Description de la categorie 44
-CAT45,Categorie_45,Description de la categorie 45
-CAT46,Categorie_46,Description de la categorie 46
-CAT47,Categorie_47,Description de la categorie 47
-CAT48,Categorie_48,Description de la categorie 48
-CAT49,Categorie_49,Description de la categorie 49
-CAT50,Categorie_50,Description de la categorie 50
-CAT51,Categorie_51,Description de la categorie 51
-CAT52,Categorie_52,Description de la categorie 52
-CAT53,Categorie_53,Description de la categorie 53
-CAT54,Categorie_54,Description de la categorie 54
-CAT55,Categorie_55,Description de la categorie 55
-CAT56,Categorie_56,Description de la categorie 56
-CAT57,Categorie_57,Description de la categorie 57
-CAT58,Categorie_58,Description de la categorie 58
-CAT59,Categorie_59,Description de la categorie 59
-CAT60,Categorie_60,Description de la categorie 60
-CAT61,Categorie_61,Description de la categorie 61
-CAT62,Categorie_62,Description de la categorie 62
-CAT63,Categorie_63,Description de la categorie 63
-CAT64,Categorie_64,Description de la categorie 64
-CAT65,Categorie_65,Description de la categorie 65
-CAT66,Categorie_66,Description de la categorie 66
-CAT67,Categorie_67,Description de la categorie 67
-CAT68,Categorie_68,Description de la categorie 68
-CAT69,Categorie_69,Description de la categorie 69
-CAT70,Categorie_70,Description de la categorie 70
-CAT71,Categorie_71,Description de la categorie 71
-CAT72,Categorie_72,Description de la categorie 72
-CAT73,Categorie_73,Description de la categorie 73
-CAT74,Categorie_74,Description de la categorie 74
-CAT75,Categorie_75,Description de la categorie 75
-CAT76,Categorie_76,Description de la categorie 76
-CAT77,Categorie_77,Description de la categorie 77
-CAT78,Categorie_78,Description de la categorie 78
-CAT79,Categorie_79,Description de la categorie 79
-CAT80,Categorie_80,Description de la categorie 80
-CAT81,Categorie_81,Description de la categorie 81
-CAT82,Categorie_82,Description de la categorie 82
-CAT83,Categorie_83,Description de la categorie 83
-CAT84,Categorie_84,Description de la categorie 84
-CAT85,Categorie_85,Description de la categorie 85
-CAT86,Categorie_86,Description de la categorie 86
-CAT87,Categorie_87,Description de la categorie 87
-CAT88,Categorie_88,Description de la categorie 88
-CAT89,Categorie_89,Description de la categorie 89
-CAT90,Categorie_90,Description de la categorie 90
-CAT91,Categorie_91,Description de la categorie 91
-CAT92,Categorie_92,Description de la categorie 92
-CAT93,Categorie_93,Description de la categorie 93
-CAT94,Categorie_94,Description de la categorie 94
-CAT95,Categorie_95,Description de la categorie 95
-CAT96,Categorie_96,Description de la categorie 96
-CAT97,Categorie_97,Description de la categorie 97
-CAT98,Categorie_98,Description de la categorie 98
-CAT99,Categorie_99,Description de la categorie 99
-CAT100,Categorie_100,Description de la categorie 100
+CAT30,Hygiene,Soins et hygiène
+CAT31,Boissons00,Boissons non alcoolisées et alcoolisées
+CAT32,Produits laitiers10,"Lait, fromage, beurre et dérivés"
+CAT33,Fruits frais,Fruits frais de saison
+CAT34,Légumes frais,Légumes frais et biologiques
+CAT35,Viandes rouges,"Bœuf, agneau et viande bovine"
+CAT36,Volailles,"Poulet, dinde et autres volailles"
+CAT37,Poissons,Poissons frais et surgelés
+CAT38,Fruits de mer,"Crevettes, moules, calamars"
+CAT39,Produits surgelés,Aliments congelés prêts à l’emploi
+CAT40,Épicerie sucrée,"Sucre, chocolat, confiseries"
+CAT41,Épicerie salée,"Pâtes, riz, conserves"
+CAT42,Céréales,Céréales pour petit-déjeuner
+CAT43,Boulangerie65,Pain et produits de boulangerie
+CAT44,Pâtisserie,Gâteaux et desserts
+CAT45,Snacks00,"Chips, biscuits apéritifs"
+CAT46,Sauces,Sauces et condiments
+CAT47,Huiles alimentaires,Huiles végétales et olive
+CAT48,Produits bio,Produits issus de l’agriculture biologique
+CAT49,Produits diététiques,Produits faibles en sucre ou en sel
+CAT50,Alimentation bébé,Produits pour nourrissons
+CAT51,Produits ménagers,Produits de nettoyage
+CAT52,Hygiène corporelle,"Savons, shampoings, gels"
+CAT53,Cosmétiques,Produits de beauté
+CAT54,Parfumerie,Parfums et eaux de toilette
+CAT55,Papeterie,Articles de bureau
+CAT56,Fournitures scolaires,"Cahiers, stylos, crayons"
+CAT57,Électronique,Appareils électroniques
+CAT58,Petit électroménager,Appareils domestiques
+CAT59,Informatique,Ordinateurs et accessoires
+CAT60,Téléphonie,Téléphones et accessoires
+CAT61,Jeux vidéo,Consoles et jeux
+CAT62,Jouets,Jouets pour enfants
+CAT63,Articles de sport,Équipements sportifs
+CAT64,Vêtements homme,Habillement masculin
+CAT65,Vêtements femme,Habillement féminin
+CAT66,Vêtements enfant,Habillement enfant
+CAT67,Chaussures,Chaussures toutes catégories
+CAT68,Accessoires mode,"Sacs, ceintures, bijoux"
+CAT69,Montres,Montres et horlogerie
+CAT70,Bijouterie,Bijoux précieux
+CAT71,Meubles,Mobilier intérieur
+CAT72,Décoration,Objets décoratifs
+CAT73,Luminaires,Lampes et éclairages
+CAT74,Jardinage,Articles de jardin
+CAT75,Bricolage,Outils et matériel
+CAT76,Peinture,Peintures et accessoires
+CAT77,Quincaillerie,Visserie et fixations
+CAT78,Automobile,Accessoires auto
+CAT79,Moto,Équipements moto
+CAT80,Vélos,Vélos et accessoires
+CAT81,Librairie,Livres et manuels
+CAT82,Papier cadeau,Emballages et cadeaux
+CAT83,Musique,CD et instruments
+CAT84,Films,DVD et Blu-ray
+CAT85,Animaux,Produits pour animaux
+CAT86,Aquariophilie,Produits pour poissons
+CAT87,Oiseaux,Accessoires pour oiseaux
+CAT88,Reptiles,Produits pour reptiles
+CAT89,Pharmacie,Produits pharmaceutiques
+CAT90,Parapharmacie,Produits de santé
+CAT91,Compléments alimentaires,Vitamines et compléments
+CAT92,Fitness,Produits de remise en forme
+CAT93,Yoga,Accessoires de yoga
+CAT94,Camping,Matériel de camping
+CAT95,Randonnée,Équipement de randonnée
+CAT96,Voyage,Accessoires de voyage
+CAT97,Bagagerie,Valises et sacs
+CAT98,Sécurité,Équipements de sécurité
+CAT99,Bureau,Mobilier et accessoires bureau

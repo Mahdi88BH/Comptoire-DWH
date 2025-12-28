@@ -1,4 +1,5 @@
 
+USE DataWareHouse;
 
 DROP TABLE IF EXISTS DataWareHouse.bronze.categories;
 
@@ -20,7 +21,7 @@ END;
 
 CREATE TABLE bronze.clients(
     code_client VARCHAR(5),
-    societe VARCHAR(40),
+    societe VARCHAR(50),
     contact VARCHAR(40),
     fonction VARCHAR(40),
     adresse VARCHAR(60),
