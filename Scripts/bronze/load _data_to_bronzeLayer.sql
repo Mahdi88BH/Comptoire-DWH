@@ -4,7 +4,7 @@ USE DataWareHouse;
 DELETE FROM bronze.categories;
 
 BULK INSERT bronze.categories
-FROM '/var/opt/mssql/datasets/Comptoire_Project/categories.csv'
+FROM '/var/opt/mssql/data/Comptoire_DB/categories.csv'
 WITH (
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',
@@ -19,7 +19,7 @@ WITH (
 DELETE FROM bronze.clients;
 
 BULK INSERT bronze.clients
-FROM '/var/opt/mssql/datasets/Comptoire_Project/clients.csv'
+FROM '/var/opt/mssql/data/Comptoire_DB/clients.csv'
 WITH (
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',
@@ -32,7 +32,7 @@ WITH (
 DELETE FROM bronze.produits;
 
 BULK INSERT bronze.produits
-FROM '/var/opt/mssql/datasets/Comptoire_Project/produits.csv'
+FROM '/var/opt/mssql/data/Comptoire_DB/produits.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -60,7 +60,7 @@ CREATE TABLE dbo.#TempCommandes (
 
 -- 2. Importation brute
 BULK INSERT dbo.#TempCommandes
-FROM '/var/opt/mssql/datasets/Comptoire_Project/commandes.csv'
+FROM '/var/opt/mssql/data/Comptoire_DB/commandes.csv'
 WITH (
     FIELDTERMINATOR = ',',
     ROWTERMINATOR = '\n',
@@ -85,7 +85,7 @@ FROM #TempCommandes;
 DELETE FROM bronze.details_commande;
 
 BULK INSERT bronze.details_commande
-FROM '/var/opt/mssql/datasets/Comptoire_Project/details_commande.csv'
+FROM '/var/opt/mssql/data/Comptoire_DB/details_commande.csv'
 WITH (
     FIRSTROW = 2,
     FIELDTERMINATOR = ',',
@@ -93,4 +93,4 @@ WITH (
     TABLOCK
 );
 
-SELECT * FROM bronze.commandes;
+

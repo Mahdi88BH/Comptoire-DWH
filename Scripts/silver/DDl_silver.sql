@@ -36,6 +36,8 @@ CREATE TABLE silver.clients(
 );
 
 
+SELECT * FROM silver.clients;
+
 
 DROP TABLE IF EXISTS DataWareHouse.silver.produits;
 

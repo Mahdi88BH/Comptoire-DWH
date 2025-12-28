@@ -1,4 +1,3 @@
-
 USE DataWareHouse;
 
 DROP TABLE IF EXISTS DataWareHouse.bronze.categories;
