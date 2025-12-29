@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Exports and artifacts
+exports/
+*.csv
+*.html
+*.xlsm
+*.pbix
+
+# Python
+__pycache__/
+*.pyc
