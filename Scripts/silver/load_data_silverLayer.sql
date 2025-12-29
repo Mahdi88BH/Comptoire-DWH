@@ -116,3 +116,54 @@ WHERE code_client NOT IN ('ALFKI','CL010', 'CL016', 'MARO2')
     AND adresse IS NOT NULL;
 
 
+
+SELECT * 
+FROM silver.clients;
+
+
+
+
+
+
+
+
+
+
+INSERT INTO silver.produits (ref_produit, nom_produit, code_categorie, quantite_unite, prix_unitaire, unite_stock, unites_commandees, niveau_reapro, indisponsible)
+SELECT 
+    ref_produit,
+    REPLACE(
+        REPLACE(
+            REPLACE(
+                REPLACE(
+                    REPLACE(
+                        REPLACE(
+                            REPLACE(
+                                REPLACE(
+                                    REPLACE(nom_produit, '+¬', 'è'),
+                                    '+ó', 'â'), 
+                                '+«', 'i'), 
+                            'GÇÖ', ' '), 
+                        '+ô', 'œ'), 
+                    '+¿', 'è'), 
+                '+¦', 'ô'), 
+            '<b>', ''), 
+        '</b>', '') AS nom_produit,
+        code_categorie,
+        REPLACE(REPLACE(REPLACE(REPLACE(quantite_unite, '+¬', ''), '+«', 'i'), 'barq.', 'barquette'), 'oz', 'ml') AS quantite_unite,
+        CASE 
+            WHEN ABS(prix_unitaire) >= 1000000.0000 THEN 1000.0000
+            WHEN ABS(prix_unitaire) = 0.0000 THEN 1.0000
+        ELSE ABS(prix_unitaire)
+        END prix_unitaire,
+        ABS(unite_stock) unite_stock,
+        ABS(unites_commandees) unites_commandees,
+        ABS(niveau_reapro) niveau_reapro,
+        ABS(indisponsible) indisponsible
+FROM bronze.produits
+WHERE nom_produit != 'Produit <script>alert("hack")</script>'
+    AND code_categorie != 'NULL' AND  PATINDEX('CAT[0-9]%', code_categorie) = 1
+    AND quantite_unite != 'NULL';
+
+  
+SELECT * FROM silver.produits;

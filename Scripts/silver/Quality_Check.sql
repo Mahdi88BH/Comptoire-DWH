@@ -166,3 +166,103 @@ WHERE adresse IS NOT NULL;
 SELECT 
     ville
 FROM bronze.clients;
+
+
+
+
+
+
+
+PRINT("===========================================================");
+PRINT("Quality Check FROM produits TBALE")
+PRINT("===========================================================");
+SELECT * 
+FROM bronze.produits;
+
+
+
+-- check duplicate  Primary Key
+SELECT
+    ref_produit,
+    COUNT(*)
+FROM bronze.produits
+GROUP BY ref_produit
+HAVING COUNT(*) > 1;
+
+
+
+
+-- Unwanted space
+SELECT 
+    nom_produit
+FROM bronze.produits
+WHERE nom_produit != TRIM(nom_produit);
+
+
+
+SELECT DISTINCT 
+    REPLACE(
+        REPLACE(
+            REPLACE(
+                REPLACE(
+                    REPLACE(
+                        REPLACE(
+                            REPLACE(
+                                REPLACE(
+                                    REPLACE(nom_produit, '+¬', 'è'),
+                                    '+ó', 'â'), 
+                                '+«', 'i'), 
+                            'GÇÖ', ' '), 
+                        '+ô', 'œ'), 
+                    '+¿', 'è'), 
+                '+¦', 'ô'), 
+            '<b>', ''), 
+        '</b>', '') AS nom_produit
+FROM bronze.produits
+WHERE nom_produit != 'Produit <script>alert("hack")</script>'
+ORDER BY 1;
+
+
+
+SELECT 
+    code_categorie
+FROM bronze.produits;
+
+
+
+SELECT 
+    code_categorie
+FROM bronze.produits
+WHERE code_categorie != 'NULL' AND  PATINDEX('CAT[0-9]%', code_categorie) = 1;
+
+SELECT
+    REPLACE(REPLACE(REPLACE(quantite_unite, '+¬', ''), '+«', 'i'), 'barq.', 'barquette') AS quantite_unite
+FROM bronze.produits
+WHERE quantite_unite != 'NULL';
+
+
+SELECT 
+    CASE 
+    WHEN ABS(prix_unitaire) >= 1000000.0000 THEN 1000.0000
+    WHEN ABS(prix_unitaire) = 0.0000 THEN 1.0000
+    ELSE ABS(prix_unitaire)
+    END prix_unitaire
+FROM bronze.produits
+ORDER BY 1 DESC;
+
+SELECT MAX(ABS(prix_unitaire)) max, MIN(ABS(prix_unitaire)) min
+FROM bronze.produits;
+
+
+SELECT ABS(prix_unitaire)
+FROM bronze.produits
+ORDER BY 1 DESC;
+
+
+
+
+PRINT("===========================================================");
+PRINT("Quality Check FROM produits TBALE")
+PRINT("===========================================================");
+SELECT * 
+FROM bronze.produits;
