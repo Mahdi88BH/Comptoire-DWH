@@ -1,4 +1,6 @@
 
+USE DataWareHouse;
+
 
 SELECT * FROM bronze.categories;
 

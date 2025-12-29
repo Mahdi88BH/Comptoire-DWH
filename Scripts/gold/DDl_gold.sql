@@ -194,3 +194,8 @@ SELECT COUNT(*) FROM gold.dim_client;
 SELECT COUNT(*) FROM gold.dim_produit;
 SELECT COUNT(*) FROM gold.dim_temps;
 
+
+SELECT * FROM gold.dim_client;
+SELECT * FROM gold.dim_produit;
+SELECT * FROM gold.dim_temps;
+SELECT * FROM gold.fact_ventes;
