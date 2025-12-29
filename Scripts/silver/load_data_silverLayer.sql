@@ -167,3 +167,57 @@ WHERE nom_produit != 'Produit <script>alert("hack")</script>'
 
   
 SELECT * FROM silver.produits;
+
+
+
+
+
+
+
+INSERT INTO silver.commandes(num_commande, code_client, date_commande, date_livraison, date_envoi, port, destination, adresse_livraison, ville_livraison, region_livraison, code_postale_livraison, pays_livraison)
+SELECT
+    num_commande,
+    code_client,
+    CAST(date_commande AS DATE) date_commande,
+    CAST(date_envoi AS DATE) date_envoi,
+    CAST(date_livraison AS DATE) date_livraison,
+    CASE ABS(port)
+        WHEN 9999.0000 THEN 90.0000
+        WHEN 5000.0000 THEN 50.0000
+        WHEN 0.0000 THEN 1.0000
+        ELSE ABS(port)
+    END port,
+    destination,
+    adresse_livraison,
+    REPLACE(ville_livraison, '+ê', 'è') ville_livraison,
+    CASE REPLACE(region_livraison, '+¿', 'è')
+        WHEN 'NULL' THEN 'N/A'
+        WHEN 'Unknown' THEN 'N/A'
+        ELSE REPLACE(region_livraison, '+¿', 'è')
+    END region_livraison,
+    CASE code_postale_livraison
+        WHEN 'NULL' THEN 'N/A'
+    ELSE code_postale_livraison
+    END code_postale_livraison,
+    CASE
+        WHEN REPLACE(REPLACE(pays_livraison, '+ë', 'E'), '-', ' ') = 'FR' THEN 'France'
+        WHEN REPLACE(REPLACE(pays_livraison, '+ë', 'E'), '-', ' ') = 'USA' THEN 'Etats Unis'
+        WHEN REPLACE(REPLACE(pays_livraison, '+ë', 'E'), '-', ' ') = 'Spain' THEN 'Espagne'
+        ELSE REPLACE(REPLACE(pays_livraison, '+ë', 'E'), '-', ' ')
+    END pays_livraison
+FROM bronze.commandes
+WHERE date_commande IS NOT NULL AND date_envoi IS NOT NULL AND date_livraison IS NOT NULL
+    AND date_commande <= date_livraison AND date_livraison <= date_livraison
+    AND port IS NOT NULL ;
+
+
+SELECT * FROM silver.commandes;
+
+
+
+
+INSERT INTO silver.details_commande (num_commande, ref_produit, quantite, remise)
+SELECT * FROM bronze.details_commande;
+
+
+SELECT * FROM silver.details_commande;

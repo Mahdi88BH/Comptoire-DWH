@@ -63,9 +63,9 @@ DROP TABLE IF EXISTS DataWareHouse.silver.commandes;
 CREATE TABLE silver.commandes(
     num_commande VARCHAR(6),
     code_client VARCHAR(5),
-    date_commande DATETIME,
-    date_livraison DATETIME,
-    date_envoi DATETIME,
+    date_commande DATE,
+    date_livraison DATE,
+    date_envoi DATE,
     port DECIMAl(19,4),
     destination VARCHAR(40),
     adresse_livraison VARCHAR(60),

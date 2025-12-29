@@ -262,7 +262,49 @@ ORDER BY 1 DESC;
 
 
 PRINT("===========================================================");
-PRINT("Quality Check FROM produits TBALE")
+PRINT("Quality Check FROM commandes TBALE")
 PRINT("===========================================================");
 SELECT * 
-FROM bronze.produits;
+FROM bronze.commandes;
+
+
+
+SELECT 
+    num_commande, 
+    COUNT(*)
+FROM bronze.commandes
+GROUP BY num_commande
+HAVING COUNT(*) > 1;
+
+
+SELECT 
+    CAST(date_commande AS DATE) date_commande,
+    CAST(date_envoi AS DATE) date_envoi,
+    CAST(date_livraison AS DATE) date_livraison
+FROM bronze.commandes
+WHERE date_commande IS NOT NULL AND date_envoi IS NOT NULL AND date_livraison IS NOT NULL
+    AND date_commande <= date_livraison AND date_livraison <= date_livraison;
+
+
+
+SELECT 
+    CASE ABS(port)
+        WHEN 9999.0000 THEN 90.0000
+        WHEN 5000.0000 THEN 50.0000
+        WHEN 0.0000 THEN 1.0000
+        ELSE ABS(port)
+    END port
+FROM bronze.commandes
+WHERE port IS NOT NULL
+ORDER BY 1 DESC;
+
+
+
+
+PRINT("===========================================================");
+PRINT("Quality Check FROM details_commande TBALE")
+PRINT("===========================================================");
+
+SELECT DISTINCT num_commande, ref_produit, quantite, remise
+FROM bronze.details_commande
+WHERE remise = 0;
