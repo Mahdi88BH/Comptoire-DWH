@@ -1,6 +1,11 @@
 USE DataWareHouse;
 
+
+
+
+
 DROP TABLE IF EXISTS DataWareHouse.bronze.categories;
+GO
 
 CREATE TABLE bronze.categories(
     code_categorie VARCHAR(20),
@@ -17,6 +22,7 @@ IF OBJECT_ID('DataWareHouse.bronze.clients', 'U') IS NOT NULL
 BEGIN
     DROP TABLE DataWareHouse.bronze.clients;
 END;
+GO
 
 CREATE TABLE bronze.clients(
     code_client VARCHAR(5),
@@ -35,7 +41,9 @@ CREATE TABLE bronze.clients(
 
 
 
+
 DROP TABLE IF EXISTS DataWareHouse.bronze.produits;
+GO
 
 CREATE TABLE bronze.produits(
     ref_produit VARCHAR(4),
@@ -54,7 +62,11 @@ CREATE TABLE bronze.produits(
 
 
 
+
+
+
 DROP TABLE IF EXISTS DataWareHouse.bronze.commandes;
+GO
 
 CREATE TABLE bronze.commandes(
     num_commande VARCHAR(6),
@@ -76,9 +88,8 @@ CREATE TABLE bronze.commandes(
 
 
 
-
-
 DROP TABLE IF EXISTS DataWareHouse.bronze.details_commande;
+GO
 
 CREATE TABLE bronze.details_commande(
     num_commande VARCHAR(6) NOT NULL,
@@ -90,6 +101,13 @@ CREATE TABLE bronze.details_commande(
     CONSTRAINT DETAILS_COMMANDE_FK2 FOREIGN KEY (num_commande)
         REFERENCES bronze.commandes(num_commande)
 );
+
+
+
+
+
+
+
 
 
 SELECT *

@@ -6,7 +6,9 @@ USE ComptoireDB;
 GO
 
 
-
+PRINT('==========================================================================')
+PRINT('Truncate All Tables')
+PRINT('==========================================================================')
 
 
 -- DELETE Record FROM Child tables first

@@ -9,7 +9,6 @@ which acts as the upstream data source for the Data Warehouse.
 
 
 
-
 -- Check if the database ComptoireDB already exists
 IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'ComptoireDB')
 BEGIN
@@ -230,3 +229,4 @@ EXEC sp_help 'ComptoireDB.dbo.details_commande';
 -- Indexs
 EXEC sp_helpindex 'ComptoireDB.dbo.commandes';
 EXEC sp_helpindex 'ComptoireDB.dbo.produits';
+

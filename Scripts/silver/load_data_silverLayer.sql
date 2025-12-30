@@ -2,7 +2,25 @@
 USE DataWareHouse;
 
 
-SELECT * FROM bronze.categories;
+PRINT('==========================================================================')
+PRINT('Truncate All Tables')
+PRINT('==========================================================================')
+
+
+-- DELETE Record FROM Child tables first
+DELETE FROM DataWareHouse.silver.details_commande;
+GO
+
+
+-- DELETE Record FROM Parent tables
+DELETE FROM DataWareHouse.silver.produits;
+DELETE FROM DataWareHouse.silver.commandes;
+GO
+
+
+DELETE FROM DataWareHouse.silver.categories;
+DELETE FROM DataWareHouse.silver.clients;
+GO
 
 
 WITH CTE_categorie AS(
@@ -218,8 +236,33 @@ SELECT * FROM silver.commandes;
 
 
 
+INSERT INTO silver.details_commande (
+    num_commande,
+    ref_produit,
+    quantite,
+    remise
+)
+SELECT
+    dc.num_commande,
+    dc.ref_produit,
+    dc.quantite,
+    dc.remise
+FROM bronze.details_commande dc
+INNER JOIN bronze.commandes c
+    ON dc.num_commande = c.num_commande
+INNER JOIN bronze.produits p
+    ON dc.ref_produit = p.ref_produit;
+
+
+
 INSERT INTO silver.details_commande (num_commande, ref_produit, quantite, remise)
 SELECT * FROM bronze.details_commande;
 
 
+
+
+
+
 SELECT * FROM silver.details_commande;
+
+

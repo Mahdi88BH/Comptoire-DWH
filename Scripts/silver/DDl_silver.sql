@@ -4,6 +4,7 @@ USE DataWareHouse;
 
 DROP TABLE IF EXISTS DataWareHouse.silver.categories;
 
+
 CREATE TABLE silver.categories(
     code_categorie VARCHAR(20),
     nom_categorie VARCHAR(100),
@@ -19,6 +20,7 @@ IF OBJECT_ID('DataWareHouse.silver.clients', 'U') IS NOT NULL
 BEGIN
     DROP TABLE DataWareHouse.silver.clients;
 END;
+
 
 CREATE TABLE silver.clients(
     code_client VARCHAR(5),
@@ -36,7 +38,7 @@ CREATE TABLE silver.clients(
 );
 
 
-SELECT * FROM silver.clients;
+
 
 
 DROP TABLE IF EXISTS DataWareHouse.silver.produits;
