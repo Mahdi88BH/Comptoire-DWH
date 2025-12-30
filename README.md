@@ -8,6 +8,8 @@ The solution covers the full data lifecycle: from data ingestion and cleaning, t
 
 ## 🏗️ 1. Data Warehouse Architecture (Medallion Architecture)
 
+![Medallion Architecture - Data Warehouse](Docs/Data_WareHouse_Architecture.drawio.png)
+
 The project follows the **Medallion Architecture**, a modern and scalable data architecture commonly used in Databricks environments.
 
 ### 🔹 Bronze Layer
@@ -29,7 +31,85 @@ The project follows the **Medallion Architecture**, a modern and scalable data a
 
 ---
 
-## ⭐ 2. Dimensional Modeling (Star Schema)
+
+## 🔄 2. ETL Process (SQL Server – Azure Data Studio)
+
+![Medallion Architecture - Data Warehouse](Docs/ETL.png)
+
+The ETL (Extract, Transform, Load) process was implemented using **SQL Server** and managed through **Azure Data Studio**.  
+This approach ensures data reliability, integrity, and structured transformation before analytical processing.
+
+---
+
+### 🔹 1. Extract (Source to Bronze)
+
+**Objective:**  
+Extract raw operational data from the ComptoirDB source system.
+
+**Implementation:**
+- Data extracted directly from transactional tables
+- Raw data stored in the **Bronze layer**
+- No heavy transformations applied
+- Original data structure preserved
+
+📌 *This layer provides traceability and historical data storage.*
+
+---
+
+### 🔹 2. Transform (Bronze to Silver)
+
+**Objective:**  
+Improve data quality and prepare data for analytical modeling.
+
+**Transformations applied using SQL:**
+- Removal of duplicate records
+- Handling of missing and null values
+- Data type normalization (dates, numeric fields)
+- Validation of foreign key relationships
+- Business rule enforcement (e.g., valid prices, quantities)
+- Standardization of textual data (countries, categories)
+
+📌 *All transformations were executed using SQL scripts in Azure Data Studio.*
+
+---
+
+### 🔹 3. Load (Silver to Gold – Data Warehouse)
+
+**Objective:**  
+Load clean and structured data into the analytical data warehouse.
+
+**Actions performed:**
+- Creation of dimension tables using surrogate keys
+- Creation of the fact table with transactional measures
+- Denormalization for performance optimization
+- Pre-calculation of analytical metrics (sales amount)
+
+📌 *The Gold layer represents the Data Warehouse optimized for OLAP analysis.*
+
+---
+
+### 🔹 4. ETL Validation and Control
+
+To ensure data quality, several validation checks were applied:
+- Record count comparisons between layers
+- Referential integrity verification
+- Detection of inconsistent or missing values
+- Basic consistency checks on measures
+
+---
+
+### 🔹 5. ETL Output
+
+At the end of the ETL process:
+- A fully populated Data Warehouse is available
+- The OLAP cube is ready for analytical queries
+- Data can be safely consumed by Databricks for dashboarding and data mining
+
+---
+
+## ⭐ 3. Dimensional Modeling (Star Schema)
+
+![OLAP Cube - Star Schema](Docs/Data_Model.drawio.png)
 
 The **Gold layer** is designed as a **star schema**, enabling fast and efficient analytical queries.
 
